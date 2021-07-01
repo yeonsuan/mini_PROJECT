@@ -1,0 +1,39 @@
+body{
+    width :100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center; /*좌우의 가운데 정렬*/
+    align-items:center;
+}
+
+
+.container{
+    border:1px solid plum;
+    padding: 25px;
+    text-align: center;
+} /* 마지막에 ; 넣지말기!!*/
+
+/* span{ /*스팬은 딱 자기 글자만큼의 할당량을 먹음
+    background-color: peachpuff;
+}
+
+.question_blank{ /*디브는 자기 범위 한칸을 다 먹음!!
+    background-color: peachpuff;
+    width: 50%;
+} */
+
+.answer_blank{
+    margin-top: 20px;
+    border-radius:25px;
+    padding: 3px;
+}
+
+.submit{
+    background-color: orchid;
+    border:none;
+}
+
+.submit:hover{
+    box-shadow:3px 3px 3px silver;
+    cursor: pointer;
+}
