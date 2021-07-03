@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.date{
+    width: 500px;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.container{
+    border: 8px solid #442551;
+    background-color: #AD3F5B;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.formula{
+    border: 3.5px dashed black;
+    border-radius: 40px;
+    background-color: white;
+    width: 400px;
+    color: black;
+    font-size:45px;
+    font-weight: 750;
+    font-family: 'Do Hyeon', sans-serif;
+    margin: 25px 25px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-width: 6px;
+    
+}
+
+input{
+    border: 3.5px solid black;
+    border-radius: 20px;
+    color:black;
+    background-color: #E6B446;
+    width: 230px;
+    padding: 15px 15px;
+    font-size: 17px;
+    font-family: 'Do Hyeon', sans-serif;
+    margin-bottom: 125px;
+}
+
+button{
+    border:3.5px solid black;
+    border-radius: 20px;
+    width: 6vw;
+    height: 8.8vh;
+    font-size: 17px;
+    font-family: 'Do Hyeon', sans-serif;
+}
