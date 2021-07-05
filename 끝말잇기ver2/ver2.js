@@ -1,15 +1,19 @@
 const formula = document.querySelector('.formula');
 const input = document.querySelector('input');
 const form = document.querySelector('form');
-const date= document.querySelector('.date');
+const day= document.querySelector('.day');
 
 function getTime(){
     const time = new Date();
     const year = time.getFullYear();
-    const month = time.getMonth();
-    const date = time.getDate();
-    date.innerHTML = year +"." + month + "."+ date;
-}
+    const month = ('0'+(time.getMonth()+1)).slice(-2);
+    const date = ('0'+(time.getDate()+1)).slice(-2);
+    day.innerHTML = year +"-" + month + "-"+ date;
+    return getTime;/*innerHTML, textContent 비슷 의미*/
+} 
+getTime();
+
+
 
 // formula.textContent = "수안"; 이게 필요한 코드일까요..?
 
