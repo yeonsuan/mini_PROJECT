@@ -16,9 +16,14 @@ const result_blank = document.querySelector(".result");
 // }) 아직 연산 기호를 눌렀을 때 입력이 안되도록 구현을 제대로 못함
 
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 
 const userInputHandler = (elem) => { //input창에다 받은 값을 넣어주기!
-    user_input.value += elem;    
+    user_input.value += elem;  
+    
 }
 
 

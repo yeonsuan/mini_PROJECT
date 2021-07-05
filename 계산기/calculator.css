@@ -11,6 +11,7 @@ table{
     font-size: 50px;
     text-align: center;
     user-select: none; /*userselect none을 넣으면 드래그가 안됨!*/
+    border-collapse: collapse; /*못생 테두리제거*/
 }
 
 .result{
@@ -27,50 +28,78 @@ table{
     text-align:end;
     padding: 0px 20px;
     box-sizing: border-box;
+    box-shadow: 4px 4px 4px gray;
 }
 
 .userinput_blank{
     background-color: black;
     color: #9B9B9B;
-    width: 492.5px;
+    width: 496px;
     height: 50px;
     font-size: 30px;
+    box-shadow: 4px 4px 4px gray;
 }
 
 tr{
-   
+    box-shadow: 4px 4px 4px gray;
     border :1px solid black;
 
 }
 
-td:hover{ /*hover은 마우스 올렸을 때 어떻게 동작하는지*/
-    box-shadow: 2px 2px 2px gray;
-    cursor: pointer;
+.equal{
+    background-color: #F8CB8E;
 }
+
 
 td{
     background-color: #444444;
     border :1px solid black;
+    box-shadow: 4px 4px 4px gray;
 
+}
+
+td:hover{ /*hover은 마우스 올렸을 때 어떻게 동작하는지*/
+    box-shadow: 4px 4px 4px gray;
+    cursor: pointer;
+    background-color: #B9B7B9;
 }
 
     .division{
         background-color:#F3AC41;;
     }
 
+    .division:hover{
+        background-color: #F8CB8E;
+    }
+
     .mul{
         background-color:#F3AC41;;
+    }
+
+    .mul:hover{
+        background-color: #F8CB8E;
     }
 
     .minus{
         background-color:#F3AC41;;
     }
 
+    .minus:hover{
+        background-color: #F8CB8E;
+    }
+
     .equal{
         background-color:#F3AC41;;
+    }
+
+    .equal:hover{
+        background-color: #F8CB8E;
     }
 
 
 input{
     background-color: #222222;
+    border: none;
+    box-shadow: 4px 4px 4px gray;
 }
+
