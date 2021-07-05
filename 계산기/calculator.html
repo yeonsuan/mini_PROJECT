@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+<div class="bodycontainer"> <!--컨테이너로 꼭 감싸줘서 묶어주기 flex적용이 안될때-->
+    <div>
+        <div class="result">계산기</div>
+        <input type="text" class="userinput_blank">
+    </div>
+
+    <div>
+        <table> <!--table, tr, td는 세트,-->
+            <tr>
+                <td class="ac"colspan="4" onclick="reset()">AC</td>
+            </tr>
+            <tr> <!--onclick을 박아서 클릭했을때 수행시키기-->
+                <!--이걸 안했으면 querySelec으로 다 부르기..-->
+                <td onclick="userInputHandler(7)">7</td>
+                <td onclick="userInputHandler(8)">8</td>
+                <td onclick="userInputHandler(9)">9</td>
+                <td class="division" onclick="userInputHandler('/')">÷</td>
+            </tr>
+            <tr>
+                <td onclick="userInputHandler(4)">4</td>
+                <td onclick="userInputHandler(5)">5</td>
+                <td onclick="userInputHandler(6)">6</td>
+                <td class="mul" onclick="userInputHandler('*')">×</td>
+            </tr>
+            <tr>
+                <td onclick="userInputHandler(1)">1</td>
+                <td onclick="userInputHandler(2)">2</td>
+                <td onclick="userInputHandler(3)">3</td>
+                <td class="minus" onclick="userInputHandler('-')">−</td>
+            </tr>
+            <tr>
+                <td onclick="userInputHandler(0)">0</td>
+                <td onclick="userInputHandler('.')">.</td>
+                <td class="plus" onclick="userInputHandler('+')">+</td>
+                <td class="equal" onclick="calculateResult()">=</td>
+            </tr>
+        </table>
+    </div> 
+</div>
+    <script src="./calculator.js"></script>
+</body>
+</html>

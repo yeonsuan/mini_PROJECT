@@ -1,0 +1,76 @@
+body{ /*bodycontainer로 묶어줬기때문에 한꺼번에 되는거*/
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 500px;
+    height: 500px;
+    border :1px solid #000000;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    user-select: none; /*userselect none을 넣으면 드래그가 안됨!*/
+}
+
+.result{
+    background-color: black;
+    color: #9B9B9B;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    box-sizing: border-box; /*padding을 border기준에 맞추는 용도*/
+}
+
+.ac{
+    text-align:end;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.userinput_blank{
+    background-color: black;
+    color: #9B9B9B;
+    width: 492.5px;
+    height: 50px;
+    font-size: 30px;
+}
+
+tr{
+   
+    border :1px solid black;
+
+}
+
+td:hover{ /*hover은 마우스 올렸을 때 어떻게 동작하는지*/
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+td{
+    background-color: #444444;
+    border :1px solid black;
+
+}
+
+    .division{
+        background-color:#F3AC41;;
+    }
+
+    .mul{
+        background-color:#F3AC41;;
+    }
+
+    .minus{
+        background-color:#F3AC41;;
+    }
+
+    .equal{
+        background-color:#F3AC41;;
+    }
+
+
+input{
+    background-color: #222222;
+}
