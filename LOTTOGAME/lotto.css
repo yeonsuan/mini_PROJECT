@@ -1,0 +1,29 @@
+.ball_color{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border :1px solid black;
+    box-shadow: 4px 4px 4px gray;
+    border-radius: 50%;
+    text-align:center;
+    margin-right:15px;
+    margin-top:5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.bonus_color{
+    /* display:inline-block; */
+    width:30px;
+    height:30px;
+    border :1px solid black;
+    box-shadow: 4px 4px 4px gray;
+    border-radius: 50%;
+    text-align:center;
+    margin-right:15px;
+    margin-top:5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
