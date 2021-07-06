@@ -45,10 +45,10 @@ result_numb.addEventListener('click', function() {
         ball.style.background = background_color;
         result_blank.appendChild(ball); //appendChild는 추가하는거 
     }
-    setTimeout(function(){
+    setTimeout(function(){ //이건 배열이기때문에 0,1,2 주는거고 밑에 bonus는 그냥 숫자기때문에 다름!
         ball_color(0); 
     },500);
-    setTimeout(function(){
+    setTimeout(function(){ 
         ball_color(1); 
     },1000);
     setTimeout(function(){
@@ -87,7 +87,7 @@ result_bonus.addEventListener('click', function() {
         bonus_blank.appendChild(bonuscome); 
     }
     setTimeout(function(){
-        bonus_color(bonus); 
+        bonus_color(bonus);
     },500);
 
 });
