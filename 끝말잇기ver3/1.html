@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>끝말잇기</title>
+</head>
+<link rel="stylesheet" href="./1.css">
+
+<body>
+    <div><span id="order">1</span>번째참가자</div> 
+    <div>제시어 : <span id="word"></span></div>
+    <input type="text">
+    <button class="target">입력</button>
+   
+    <script>
+        const number = Number(prompt('몇 명이 참가할꺼양?'));
+        const $button = document.querySelector('button');
+        const $input = document.querySelector('input');
+        const $word = document.querySelector('#word');
+        const $order = document.querySelector('#order');
+        let word; //제시어 '자바'
+        let newWord; //새로 입력한 단어 '바보'
+
+        const onClickButton = () => {
+
+            if(!word){ //제시어가 비어있는가?
+                //비어있다. 
+                word = newWord; 
+                $word.textContent=word; 
+                $input.value='';
+                const order = parseInt($order.textContent); //숫자로 바꾸기 parseInt 혹은 Number 현재순서
+            
+                    if(order+1>Number){//현재순서에 1을 더한게 num보다 크냐?
+                        $order.textContent = 1 ;
+                    }else{
+                        $order.textContent = order + 1;
+                        }
+                $input.value='';
+                $input.focus();
+
+            }else{
+                //비어있지 않다.
+                if(word[word.length-1]===newWord[0]){//올바른가 - 문자도 문자.length 가능!
+                    word = newWord; 
+                $word.textContent=word;
+
+                    if(order+1>Number){
+                            $order.textContent = 1 ;
+                        }else{
+                            $order.textContent = order + 1;
+                            }
+
+                $input.value=''; //입력창 비우기~
+                $input.focus();
+                }else{//올바르지 않은가
+                    alert('틀렸답니당!');
+                }
+            }
+
+        };
+        const onInput = (event) => {
+            newWord = event.target.value
+        };
+
+        $button.addEventListener('click', onClickButton);
+        $input.addEventListener('input', onInput);
+    </script>
+
+    </body>
+   
+</html>
